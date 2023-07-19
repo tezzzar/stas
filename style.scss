@@ -539,5 +539,10 @@ nav {
   }
   .benefits__element {
     width: 50%;
+    .benefits__element_list {
+      display: flex;
+      justify-content: space-evenly;
+      height: 100%;
+    }
   }
 }
