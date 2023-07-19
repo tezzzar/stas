@@ -60,24 +60,10 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// window.addEventListener("scroll", function () {
-//   var scrollAnime = document.querySelector(".anime");
-//   var blockTop = scrollBlock.getBoundingClientRect().top;
-
-//   if (blockTop < window.innerHeight && blockTop + scrollBlock.offsetHeight > 0) {
-//     scrollAnime.classList.add("animate__rubberBand");
-//   } else {
-//     scrollAnime.classList.remove("animate__rubberBand");
-//   }
-// });
-
-// Отримуємо елемент, який потрібно відстежувати
 const element = document.querySelector('.anime');
 
-// Створюємо новий екземпляр Intersection Observer
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    // Коли елемент зʼявляється на екрані (entry.isIntersecting === true), додаємо клас "visible"
     if (entry.isIntersecting) {
       entry.target.classList.add('animate__rubberBand');
     } else {
@@ -86,9 +72,7 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
-// Починаємо відстежувати елемент
 observer.observe(element);
-
 
 const movingText = document.querySelector('.moving-text');
 function isElementVisible(element) {
