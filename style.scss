@@ -437,6 +437,7 @@ nav {
   .partners-1 {
     width: 50%;
     position: relative;
+    right: 5%;
     .moving-text {
       position: absolute;
       top: 15%;
@@ -457,7 +458,6 @@ nav {
       font-style: italic;
       opacity: 1;
       transform: translateX(0);
-      left: -60px;
     }
   }
 

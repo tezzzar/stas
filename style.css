@@ -408,6 +408,7 @@ nav {
 .partners .partners-1 {
   width: 50%;
   position: relative;
+  right: 5%;
 }
 .partners .partners-1 .moving-text {
   position: absolute;
@@ -428,7 +429,6 @@ nav {
   font-style: italic;
   opacity: 1;
   transform: translateX(0);
-  left: -60px;
 }
 .partners .partners-2 {
   background-color: #b09673;

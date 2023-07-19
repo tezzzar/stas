@@ -60,7 +60,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-const element = document.querySelector('.anime');
+const anime = document.querySelector('.anime');
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -71,8 +71,9 @@ const observer = new IntersectionObserver(entries => {
     }
   });
 });
-observer.observe(element);
+observer.observe(anime);
 
+// ---------------------------------------------------------
 
 const movingText = document.querySelector('.moving-text');
 
@@ -86,3 +87,7 @@ const observerText = new IntersectionObserver(entries => {
   });
 });
 observerText.observe(movingText);
+
+
+
+
