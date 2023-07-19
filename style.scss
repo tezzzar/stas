@@ -531,18 +531,38 @@ nav {
         font-size: 40px;
         font-weight: 900;
         color: #b09673;
-        // max-width: 500px;
-        // text-align: center;
         will-change: auto;
       }
     }
   }
   .benefits__element {
     width: 50%;
+    li {
+      font-size: 20px;
+      list-style-type: none;
+      margin: -16px 0 0 0;
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    li::before {
+      content: '';
+      display: inline-block;
+      height: 23px;
+      width: 23px;
+      background-image: url(img/checklist.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 18px;
+    }
     .benefits__element_list {
       display: flex;
+      flex-direction: column;
       justify-content: space-evenly;
       height: 100%;
+      padding-top: 15px;
     }
   }
 }
