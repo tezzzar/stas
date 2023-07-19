@@ -87,7 +87,3 @@ const observerText = new IntersectionObserver(entries => {
   });
 });
 observerText.observe(movingText);
-
-
-
-
