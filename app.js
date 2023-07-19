@@ -71,29 +71,18 @@ const observer = new IntersectionObserver(entries => {
     }
   });
 });
-
 observer.observe(element);
 
+
 const movingText = document.querySelector('.moving-text');
-function isElementVisible(element) {
-  return new Promise((resolve) => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          observer.disconnect();
-          resolve(true);
-        }
-      });
-    });
 
-    observer.observe(element);
+const observerText = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show-text');
+    } else {
+      entry.target.classList.remove('show-text');
+    }
   });
-}
-
-const myElement = document.getElementById('text-moving');
-
-isElementVisible(myElement).then((isVisible) => {
-  if (isVisible) {
-    movingText.classList.add('show-text');
-  }
 });
+observerText.observe(movingText);
