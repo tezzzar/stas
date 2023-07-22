@@ -530,4 +530,16 @@ nav {
   justify-content: space-evenly;
   height: 100%;
   padding-top: 15px;
+}
+
+.franshiza {
+  height: 925px;
+  background-color: #b09673;
+  padding-top: 3%;
+  padding-left: 25%;
+}
+.franshiza .fran-white-block {
+  position: relative;
+  height: 850px;
+  background-color: #fff;
 }/*# sourceMappingURL=style.css.map */
