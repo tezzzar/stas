@@ -568,7 +568,7 @@ nav {
 }
 
 .franshiza {
-  height: 925px;
+  height: 915px;
   background-color: #b09673;
   padding-top: 3%;
   padding-left: 25%;
@@ -626,5 +626,24 @@ nav {
       font-size: 1.125rem;
       margin: 39px 0 0;
     }
+  }
+}
+.connect {
+  height: 1110px;
+  // position: absolute;
+  .connect-color_block {
+    background-color: #445063;
+    width: 640px;
+    height: 100%;
+    margin-left: 27%;
+  }
+  .connect-photo {
+    background: url(img/contact_photo.jpeg) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+    width: 890px;
+    bottom: 80%;
+    left: 24%;
   }
 }
