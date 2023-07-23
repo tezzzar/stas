@@ -578,3 +578,53 @@ nav {
     background-color: #fff;
   }
 }
+
+.fran-white-block {
+  display: flex;
+  padding: 30px;
+  gap: 80px;
+  min-height: 850px;
+  .fran-white-block_left {
+    width: 85%;
+    padding-bottom: 150px;
+    h2 {
+      font-size: 3rem;
+      font-weight: normal;
+      color: #445063;
+    }
+    .fran-white-block_left_photo {
+      height: 360px;
+      background-image: url(img/fran-white-block_left_photo.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 80px;
+    }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      border-style: solid;
+      font-weight: 700;
+      margin: 80px auto 0;
+      display: table;
+      padding: 15px 30px;
+      color: #000;
+    }
+    a:hover {
+      color: #fff;
+      background-color: #000;
+    }
+  }
+  .fran-white-block_right {
+    .fran-white-block_right_photo {
+      background-image: url(img/fran-white-block_right_photo.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 440px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 1.125rem;
+      margin: 39px 0 0;
+    }
+  }
+}
