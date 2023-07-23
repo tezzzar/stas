@@ -581,6 +581,9 @@ nav {
   color: #fff;
   background-color: #000;
 }
+.fran-white-block .fran-white-block_right {
+  width: 90%;
+}
 .fran-white-block .fran-white-block_right .fran-white-block_right_photo {
   background-image: url(img/fran-white-block_right_photo.jpg);
   background-size: cover;
